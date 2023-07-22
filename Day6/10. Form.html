@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="../JQuery Jar/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).click(function () {
+                var fname= $("#fn").val();
+                var lname= $("#ln").val();
+                $("#mydiv").html("<h3>"+fname+" "+lname+"</h3>")
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <form action="">
+        FN: <input type="text" name="name" id="fn"><br>
+        LN: <input type="text" name="last" id="ln"><br>
+        <input type="submit" name="sub" id="sub" value="submit">
+    </form>
+    <div id="mydiv">
+
+    </div>
+</body>
+</html>

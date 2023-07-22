@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> <!-- CDN -->
+        <script>
+        $(document).ready(function () {
+            var list=$("div p");
+            // list.each(function(){
+            //     console.log($(this).html())
+            // }) 
+            // list.each(function(index){
+            //     console.log(index + " " +$(this).html())
+            // }) 
+            list.each(function(index,element){
+                console.log(index + " " +$(element).html())
+            }) 
+            // list.each(function(index,element){
+            //     $("#d1").html(index + " " +$(element).html())
+                
+            // }) 
+            
+        })
+    </script>
+</head>
+<body>
+    <p class="c1">paragraph -1 </p>
+    <p id="n1"> Paragraph -2 </p>
+    <p>Paragraph 3</p>
+    <div>
+
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Thord  paragraph</p>
+    </div>
+    <div>
+        
+        <p>Forth paragraph</p>
+        <p>fifth paragraph</p>
+        
+    </div>
+    <p>Sixth paragraph</p>
+    <h2 class="c1"> header 2</h2>
+    <input type="button" name="btn" id="btn" value="show" onclick="f1()">
+    <div id="d1"></div>
+</body>
+</html>

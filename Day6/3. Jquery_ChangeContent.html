@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> <!-- CDN -->
+    <!-- Javascript code  -->
+    <!-- <script>
+        function changeallpara(){
+            for (var i=0;i<=4;i++){
+                document.getElementsByTagName("p")[i].innerHTML="new content"
+            }
+        }
+    </script> -->
+
+    <!-- JQuery Code => Change the Content  -->
+    <!-- <script>
+        $(document).ready(function(){
+                $("p").html("New content"); 
+        })
+    </script> -->
+
+    <script>
+        $(document).ready(function () {
+            // $("p").css("color","red")
+            // $(".c1").css("color","red")
+            $("#n1").css("color","red").css("background-color","yellow").css("border","solid blue 5px")
+            $("p").length
+            $(".c1").html("<h3>Here you goooooooo<h3>")
+            $(".c1").html("new Content")
+            $("p").text()
+        })
+    </script>
+</head>
+<!-- <body onload="changeallpara()"> -->
+<body>
+    <p class="c1">paragraph -1 </p>
+    <p id="n1"> Paragraph -2 </p>
+    <p>Paragraph 3</p>
+    <div>
+
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Thord  paragraph</p>
+    </div>
+    <div>
+        
+        <p>Forth paragraph</p>
+        <p>fifth paragraph</p>
+        
+    </div>
+    <p>Sixth paragraph</p>
+    <h2 class="c1"> header 2</h2>
+    <input type="button" name="btn" id="btn" value="show" onclick="f1()">
+</body>
+</html>
