@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function changeColor(){
+            var para=document.getElementById("p1")
+            para.style.color="blue"
+            para.style.fontSize="larger";
+        }
+        function revertColor(){
+            var para=document.getElementById("p1")
+
+            para.style.color="red"
+            para.style.font="50px"
+            para.style.fontSize="smaller";
+        }
+    </script>
+</head>
+<body>
+    <p id="p1" onmouseover="changeColor(this)" onmouseout="revertColor(this)">Hover to change the color</p>
+</body>
+</html>

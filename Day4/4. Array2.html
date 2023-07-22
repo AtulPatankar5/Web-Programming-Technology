@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[10,20,30,40,50]
+        document.write(arr+"<br>")
+
+        arr.push(60)
+        arr.push(70,80,90)
+        document.write(arr+"<br>")
+
+        arr.pop();
+        document.write(arr+"<br>")
+
+        
+        var result=arr.slice(2,6);
+        for(element of result)
+        document.write(element+"<br>")
+        
+        document.write("Reverse="+arr.reverse()+"<br>")
+        
+        //JOin 
+        var s1="pankaj | vishnavi | ashish | Rahul"
+        var arr=s1.split("|");
+        document.write(arr+"<br>")
+
+        // for(element of arr)
+        // document.write(element+"<br>")
+        
+        var str=arr.join("%");
+        document.write(str+" <br>")
+
+    
+        var arr=[[1,2,3],["A","B","C"],[true, false]]
+        document.write(arr[1][1])
+
+    </script>
+</body>
+</html>

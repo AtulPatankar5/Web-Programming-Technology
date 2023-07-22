@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function sum(){
+            // arguments  built in array in javascript
+           
+            var res=0;
+            for(var i=0;i<arguments.length;i++){
+                res+=arguments[i];
+            }
+            return res;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        
+        document.write("sum="+sum(10,20,30)+"<br>")
+        document.write("sum="+sum(1,2,3,4,5)+"<br>")
+        document.write("sum="+sum(100,200,300)+"<br>")
+    </script>
+</body>
+</html>

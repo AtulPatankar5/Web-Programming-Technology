@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+        function f1(){
+            var uname=document.getElementById("name").value;
+            // alert("name is "+uname)
+            // document.write("Name: "+uname)// New page will be displayed 
+            document.getElementById("myspan").innerHTML=uname;
+        }
+
+    </script>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form action="">
+        Name: <input type="text" name="name" id="name"> 
+        <input type="button" name="submit" id="submit" onclick="f1()" value="submit">
+        </form>
+
+HELLO , <span id="myspan"></span>
+    </body>
+</html>

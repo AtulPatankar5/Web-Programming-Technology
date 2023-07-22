@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #s1,#s2{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateName(){
+                
+                var uname=document.getElementById("name").value;
+                if(uname.length<5)
+                {
+                    document.getElementById("s1").innerHTML=" name cannot be less than 5 character"
+                    document.getElementById("name").focus()
+                    document.getElementById("name").select()                    
+                }
+                else
+                {
+                    document.getElementById("s1").innerHTML="";
+                }
+            }
+
+
+    </script>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form >
+        UserName: <input type="text" name="name" id="name" onchange="validateName()"><span id="s1" >*</span> <br>
+        Password: <input type="password" name="pass" id="pass"><span id="s2">*</span><br>
+        <input type="submit" name="submit" id="submit" value="submit">
+        </form>
+
+        HELLO , <span id="myspan"></span>
+    </body>
+</html>

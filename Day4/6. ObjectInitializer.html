@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // JSON_ Javscript Object Notation
+
+        // var stu={};// Java Script object 
+        var stud={name:"Rahul", age:23};// Object Creation 
+        document.write(stud.name+" "+stud.age+"<br>")
+
+        stud.name="Ashish";
+        stud.age=312;
+        document.write(stud.name+" "+stud.age)
+
+        var person={
+                    name: "Adhish",
+                    age:23,
+                    hobbies:["Sports","painting"],
+                    adddress:{city: "Pune", State: "maharashtra"}
+        }
+
+        document.write(person.name+"<br>")
+        document.write(person.age+"<br>")
+        document.write(person.hobbies[1]+"<br>")
+        document.write(person.adddress.city+"<br>")
+        document.write(person.adddress.State+"<br>")
+
+
+        var bookobj={
+            id:123,
+            name:"Alchimsit",
+            price: 1333,
+            display: function(){
+                document.write(this.id+" "+this.name+" "+this.price)
+            },
+            increment: function(amount){
+                this.price+=amount
+            }
+
+        }
+
+        bookobj.display();
+        document.write("<br>")
+        bookobj.increment(99999);
+        document.write("<br>")
+        bookobj.display();
+        
+</script>
+    
+</body>
+</html>

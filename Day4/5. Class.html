@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emp{
+            constructor(id, name){
+                this.id=id;
+                this.name=name;
+            }
+            displayDetails(){// must not use function keyword
+                document.write("id="+this.id+" name="+this.name+"<br>")
+            }
+        }
+
+        var e1=new Emp(101,"Raj");
+        var e2= new Emp(102,"Bishwa");
+        e1.displayDetails()
+        e2.displayDetails()
+
+        e1.name="Rajesh"// values can  be modified 
+        e1.displayDetails()
+        document.write(e1.name+" "+e1.id+"<br>")
+
+
+      
+</script>
+    
+</body>
+</html>

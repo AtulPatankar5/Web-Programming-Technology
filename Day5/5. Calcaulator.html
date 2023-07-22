@@ -1,0 +1,68 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script>
+            function add(n1,n2){
+                return  parseInt( n1+n2);
+            }
+            function sub(n1,n2){
+                return n1-n2;
+            }
+            function mul(n1,n2){
+                return n1*n2;
+            }
+                     
+        
+            
+        
+            var res;
+        
+            // function validateNum1(no1){
+            //     if(no1 !=null || no1!=""){
+            //         document.getElementById("s1").innerHTML="Value cannot be null"
+            //     }
+            // }
+            function calculate(){ 
+                var no1=parseInt (document.getElementById("num1").value);    
+                var no2=parseInt (document.getElementById("num2").value);    
+                // validateNum1(no1);
+
+                var op;
+        
+                var arr=document.getElementsByName("operation");
+                for( var ele of arr){
+                    if(ele.checked){
+                        op=ele.value;
+                        break;
+                    }
+                } 
+                switch(op){
+                case "add": 
+                    res=add(no1,no2);
+                    break;
+                case "sub":
+                    res=sub(no1,no2);
+                    break;
+                case "mul":
+                    res=mul(no1,no2);
+                    break;      
+                }
+                document.getElementById("result").value=res;
+            }    
+        </script>
+    </head>
+    <body>
+        <form >
+
+            Number 1:     <input type="number" name="num1" id="num1" autofocus required ><br>
+            Number 2:     <input type="number" name="num2" id="num2" required><br>
+            <input type="radio"  name="operation" id="add" value="add"><label for="add">Add</label> 
+            <input type="radio"  name="operation" id="sub" value="sub"><label for="sub">Sub</label> 
+            <input type="radio"  name="operation" id="mul" value="mul"><label for="mul">Mul</label><br> 
+            
+            <input type="button" onclick="calculate()" value="Calculate">
+            <input type="text" name="result" id="result" readonly><br>
+        </form>
+
+    </body>
+    </html>

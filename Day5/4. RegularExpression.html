@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function validatePIN(){
+        var exp=/^\d{5}$/
+        var pin=document.getElementById("pin").value
+        if(pin.search(exp)==-1)
+        {
+            document.write("Enter valid PIN")
+        }else
+        alert("Sucess")
+    }
+</script>    
+</head>
+<body>
+    
+    <input type="text" name="pin" id="pin" >
+    <button type="button" onclick="validatePIN()" > Check</button>
+</body>
+</html>

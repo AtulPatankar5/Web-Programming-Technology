@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function f1()
+        {
+            // document.getElementById("p1").innerHTML="New COntent"
+            plist=document.getElementsByTagName("p")
+            for( var i=0;i<plist.length;i++){
+                plist[i].innerHTML="New Content"
+            }
+        }   
+    </script>
+</head>
+<body>
+    <p id="p1">This is para 1</p>
+    <p>This  is para 2</p>
+    <button type="button" name="btn" onclick="f1()" > Change  the text</button>
+</body>
+</html>

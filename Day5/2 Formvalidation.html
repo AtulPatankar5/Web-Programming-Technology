@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #s1,#s2{
+                color: red;
+            }
+        </style>
+        <script>
+            function validateName(){
+                
+                var uname=document.getElementById("name").value;
+                if(uname.length<5)
+                {
+                    document.getElementById("s1").innerHTML=" name cannot be less than 5 character"
+                    return false;
+                }
+                else
+                {
+                    document.getElementById("s1").innerHTML="";
+                    return true;                    
+                }
+            }
+
+            function validatePassword(){
+            var password=document.getElementById("pass").value;
+             if(password.length<5 || password.length>10 )
+                {
+                document.getElementById("s2").innerHTML=" Password cannot be less than 5 and more than 10 character"
+                return false;
+                }
+             else
+                {
+                    document.getElementById("s2").innerHTML="";
+                 return true;
+                }
+            }
+
+            function validateForm(){                
+            if(validateName() && validatePassword()){
+                return true;
+            }
+            else{
+                return false;
+            }
+            
+            }
+
+    </script>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form onsubmit="return validateForm()">
+        UserName: <input type="text" name="name" id="name" autofocus required><span id="s1" >*</span> <br>
+        Password: <input type="password" name="pass" id="pass"><span id="s2">*</span><br>
+        <input type="submit" name="submit" id="submit" value="submit">
+        </form>
+
+        HELLO , <span id="myspan"></span>
+    </body>
+</html>

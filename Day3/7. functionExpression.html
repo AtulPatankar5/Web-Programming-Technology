@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function greet(){
+            document.write("Greeting the guest"+"<br>");
+        }
+        var greetuser=function(){ // Anonymous function 
+            document.write("Good Morning"+"<br>")
+        }
+        var greetuser=function(username){ // Anonymous function with arguments  
+            document.write("Good Morning"+username+"<br>")
+        }
+
+        var sum=function(a,b){
+            // document.write(a+b+"<br>");
+            return a+b;
+ }
+</script>
+</head>
+<body>
+    <script>
+        greet();
+        // greetuser();
+        greetuser("Chris")
+        //  sum(54,12)
+        document.write(sum(24,12));
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+p{
+    color: blue;
+    size: 10px;
+}
+h1{
+    color: red;
+    text-align: center; 
+}
+body{
+    background-color: aquamarine;
+}
+th{
+    background-color: chartreuse;
+}

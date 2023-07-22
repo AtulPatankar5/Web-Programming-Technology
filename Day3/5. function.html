@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        // function greet(){
+        //     document.write("hello user 1");
+        // }
+        function greet(username){
+            document.write("hello "+ username);
+        }
+        // function add(a,b){
+        //     document.write("Sum="+(a+b));
+        // }
+
+        function add(a,b){
+            return a+b;
+        }
+
+        function demo(a,b,c,d,e,f){
+            document.write(a+" "+b+" "+d+ " " + e+" "+f+"<br>");
+        }
+
+        function demo(a,b){
+            document.write("second"+a+" "+b+"<br>");
+        }
+
+</script>
+</head>
+<body>
+    <script>
+        // greet();
+        // document.write("<br>");
+        // greet("Suraj");
+        // add(10,20);
+        document.write("Summation is ="+add(10,20)+"<br>");
+        demo(1,2);
+        demo(1,2,3,4,5,6);// always the latest function is called 
+       </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        //Split
+        var s1="Hello from user Good morning"
+        var arr=s1.split(" ")
+        for(var i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>")
+        }
+
+        //Slice
+        var s2="Commiteeemembers"
+        var res=s2.slice(2,4);
+        document.write(res+"<br>");
+
+
+        //Date
+        var today=new Date();
+        document.write(typeof(today)+" "+today+"<br>")
+        document.write(today.getDate()+"<br>")
+        document.write(today.getMonth()+"<br>")
+        document.write(today.getDay()+"<br>")
+        document.write(today.getTime()+"<br>")
+        document.write(today.getFullYear()+"<br>")
+
+        today.setMonth(11);
+        today.setDate(25);
+        document.write(today+"<br>")
+        document.write(today.getTime());
+    
+    </script>
+</body>
+</html>
