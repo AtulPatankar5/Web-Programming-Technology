@@ -9,11 +9,15 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/submit-data",(req,res)=>{
-    var bid=req.body.bookid ;
+    const bid = Math.floor(Math.random() * 1000000);
+    // var bid=req.body.bookid ;
     var bname=req.body.bookname; 
     var bauthor=req.body.author;
     var bprice=req.body.price;
+    // Generate an Id for the book.
+  
     res.send("<table border='2px' cellspacing='0px'><tr><td>BookID</td><td>Book name</td><td>Author</td><td>Book Price</td></tr> <tr><td>"+ bid+"</td><td>"+ bname+"</td><td>"+ bauthor+"</td><td>"+ bprice+"</td>"+"</tr> </table>");
 })
 
 app.listen(3000,()=>console.log("Port running at 3000"))
+

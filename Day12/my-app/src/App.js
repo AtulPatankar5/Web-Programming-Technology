@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+// import image from '../public/images/'
 import './App.css';
 import React from 'react';
 // import HelloworldComponents from './components/HelloworldComponents';
@@ -36,9 +37,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+       {/* <header className="App-header"> */}
+        {/* <img src={image} className="App-logo" alt="logo" /> */}
+      {/*  <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -79,12 +80,13 @@ function App() {
 
 
      
-      {/* ----------- json array(see above for json array) ------------ */}
+      {/* -----------  calling json array(see above for json array) ------------ */}
       <Person name ={Per[0].name} age={Per[0].age}/>
       <Person name ={Per[1].name} age={Per[1].age}/>
       <Person name={Per[2].name} age={Per[2].age}/>
 
 
+      {/* ----------- calling json array(see above for json array) ------------ */}
       <Expense title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date}/>
       <Expense title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}/>
       <Expense title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date}/>
