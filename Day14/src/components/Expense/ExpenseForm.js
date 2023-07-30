@@ -23,7 +23,7 @@ const ExpenseForm=(props)=>{
         const expense={
             title:inputTitle,
             amount:inputAmount,
-            date:inputDate 
+            date: new Date(inputDate) 
         }
         console.log(expense)
         setinputTitle('')
